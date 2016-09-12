@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Katy's Blog</title>
+        <style type ="text/css">
+            *{
+                font-family: Arial;
+            }
+            body{
+                background-color: #6f944d;
+background-image: url("https://www.transparenttextures.com/patterns/tree-bark.png");
+                margin: 1%;
+                margin-left:2%;
+            }
+            a{
+                color:purple;
+            }
+            a:visited{
+                color:orange;
+            }
+            label>div{
+                margin: 1% 0;
+                font-weight: bold;
+            }
+            .button{
+                margin: .5% 0;
+                padding: 1%;
+                background-color: orange;
+                border: 1px solid orange;
+                color: white;
+                font-weight: bold;
+            }
+            input:hover, textarea:hover {
+                border: 2px solid orange;
+            }
+            .button:hover{
+                color: orange;
+                background-color: white;
+                border: 1px solid orange;
+            }
+            .entry{
+                padding: 1%;
+
+            }
+            .entry-title{
+                font-size: 20px;
+                color: orange;
+            }
+            .entry-body{
+                font-size: 12px;
+                margin: 5px 20px 20px;
+                background-color:white;
+                padding: .5%;
+            }
+            .error{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
